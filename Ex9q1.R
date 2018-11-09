@@ -1,0 +1,5 @@
+setwd("/Users/willphillips/Desktop/Introduction to Biocomputing/Ex9/Biocomp-Fall2018-181102-Exercise9")
+data=read.table("shoes")
+library(ggplot2)
+a=ggplot(data=data, aes(x=V1,y=V2))
+a+geom_point()+geom_smooth(method=lm)
